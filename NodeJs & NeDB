@@ -1,0 +1,73 @@
+NODE.JS;
+
+
+Cadatrar: Post
+Alterar: Put
+Consultar: Get
+Excluir: Delete
+
+-----
+
+NeDB;
+
+Procurar todos: Find
+Procurar um: FindOne
+Alterar: Update
+Cadastro: Insert
+Excluir: Remove
+
+-----
+
+Comandos;
+
+node -v : Mostra a versão atual instalada
+
+ctrl + c : para o processo
+
+npm init : inicia a montagem do pacote Json
+
+npm install +(nome do modulo) : instala um modolo novo no projeto
+
+npm install +(nome do modulo) --save: instala um modolo novo projeto e especifica a necessidade dele para funcionamento
+
+npm  install +(nome do modulo -g : instala modulos em carater global
+
+node index : sobe o server de maneira padrão
+
+nodemon index: sobte o server utilizando o nodemoon (mais pratico e utilitario)
+
+-----
+
+Modulos uteis;
+
+Nodemon: server atualizando a cada modificação no code automaticamente
+
+Express: diminuição no tamanho dos codigos e mais simples criação de server
+
+Consign: agilização na criação de rotas e codigo mais limpo
+
+body-parser: ferramenta que faz o express interpretar o que a no postman
+
+Postman: teste de servidor
+
+----
+
+API's;
+
+json: mt utilizada no Nodejs
+
+----
+
+NeDB: banco de dados JavaScript;
+
+Metodos;
+
+find:
+
+findOne:
+
+update
+
+insert:
+
+remove:
