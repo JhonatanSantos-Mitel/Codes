@@ -1,0 +1,170 @@
+Principais pontos de Git:
+
+Versionamento; 
+
+Git: Trabalha com os estados dos arquivos levando todos para a proxima 
+versão mesmo que não haja modificações, criando link simbólicos para os 
+não modificados assim facilitando a manipulação dos mesmos.
+
+Outros: Trabalham com a diferenças dos arquivos salvando versões baseadas 
+apenas nos arquivos modificados. 
+
+Historia;
+
+Criado por Linus Torvald para ter um controle de versão para o Linux
+o a unica empresa que possuia essa tecnologia antes disso era a chamada BitKepper.
+
+-----------------------------------------------------------
+
+Comandos; > configuração
+
+git config --global user.name "name" : configura o nome do usuario
+
+git config --global user.email "email" : configura o email do usuario    
+
+git config --global core.editor "editor" : configura o editor padrão do usuario
+
+git config --global alias.(atalho) (oque o comando faz) : criar atalhos de comandos
+
+git config user.name : mostra o nome do usuario 
+
+git config user.email : mostra o email do usuario 
+
+git config core.editor : mostra o editor padrão do usuario 
+
+git config --list : mostra todas as informações
+
+---
+
+Comandos; > Uso
+
+git init : Inicializa o repositorio e visualiza as mudanças
+
+git status : Reporta como está o repositório no momento
+
+git add : Adiciona arquivos para ser possivel o comit
+
+git push -u (para onde vai)+(de onde vem) : envia td para o diretório
+
+git push (para onde vai) + (de onde vem) --tags : sobe as tags para o diretorio
+
+git clone +(link) : clona o repositorio para a sua maquina
+
+git revert +(Hash) : apaga a ultima modificação feita no arquivo
+
+git checkout +Nome do branch : muda o branch em que o usuario esta
+
+git checkout -b +nome do branch : criar um branch 
+
+git tag : mostra as tags
+
+git tag -d + (versão): apagar tags locais
+
+git push + (para onde vai) : (versão) : apaga as tags remotas
+
+git tag -a (versão) -m ("mensagem") : cria tags para versionamento
+
+git branch : mostra os branch's do projeto
+
+git branch -D +Nome do branch : apaga o branch
+
+git push + (para onde vai) : (branch) : apaga as branch's remotas
+
+git merge +"nome do branch" : utiliza o metodo merge para unir as branch's
+
+git commit -m "add mensagem": Cria um snapshot (versão)
+
+git stash : salva o arquivo no estado de WIP (Work in progress)
+
+git stash list: mostra todos os stash's
+
+git stash clear : limpa o stash
+
+git log : Mostra o historico e a hash
+
+git log --decorate : Mostra informações mais detalhadas
+
+git log --author="nome do autor" : Mostra de autor especifico
+
+git shortlog : Mostra de forma direta as modificações e quem as fez
+
+git shortlog -sn : Mostra quantidade de commits e o nome de quem comitou
+
+git log --graph : Mostra de forma grafica os branchs e versionamento
+
+git show +"hash" : mostra td sobre a hash
+
+git diff : Detalha as mudanças feitas no arquivo modificado
+
+git diff --name-only : procura arquivos modificados apenas pelo nome
+
+git commit -am "Edit readme" : commita arquivos de forma direta se os mesmos ja existiram
+
+git checkout +"nome arq" : reseta arquivo para antes da edição (não funciona dps do add)
+
+git reset HEAD +"nome arq" : retira do add (estado fixo)
+
+git reset --soft +(hash anterior a desejada): destroi o arquivo já comitado para e o retorna para o estado após add
+
+git reset --mixed +(hash anterior a desejada): destroi o arquivo já comitado para e o retorna para antes de add
+
+git reset --hard +(hash anterior a desejada): destroi o arquivo já comitado para e o exclui por completo 
+
+git remote : mostra os repositorios remotos
+
+git remote -v : mostra os repositorios com mais detalhes
+
+--- 
+
+Comandos Vim/vi;
+
+i: inserção
+esc: sair inserção
+shift+; : iniciar comando
+	+ wq : salvar/sair
+
+---
+Versão;
+
+master (root-commit) {ad884f1} -> nº de Versão
+
+commit 4d19c2f6a25390e97b0d51ac8475dbd64c4f6694 -> Hash
+
+---
+
+Estagios Git;
+
+untracked : precisa ser adicionado
+unmodified : já adicionado pronto para commit
+modified : precisa ser adicionado novamente e comitado novamente
+staged : já comitado em versão especifica
+
+branch: ponteiro que leva um commit, utilizado para desenvolvimento simultaneo
+
+merge: cria um commit para unir as branch em uma cadeia no formato diamante, ciclo / cronologico 
+
+rebase: move/copia tudo que existe no branch ramificado do master para o inicio da fila tornando os comit lineares. / não cronologico
+
+gitignore : crie o arquivo e coloque dentro deles os arquivos que não deseja que apareçam
+---
+
+Chaves de acesso SSH Github;
+
+cd ~/.ssh : entra no repositorio da chave 
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCo0KkQWKL
+JbWYaCTvvt1bCtNZTX+RKGekR8IqGMo9Zj9nyAZmySs7iDm
+tsHLtQvStIvna+FDV53QSwt2raE3/Ayoa2flCRtcDF9ufZk
+j1lxvAC9oEzomTLkTJ9JwkDKS5/kb/JupfdgMwErNGm6ioZ
+XQCbkBCayo+jOw8t8zPcBJjISm4wI0mVXl7cBUwAqbVJki/
+MC0tUzZk0yAAg80nOEiF5h7tU0FPgaW8hZ06l50Nm9vXLcj
+W0NFGiylNQGxMG24kJ+1eG4WBsEE6ZEPQbMFkWrD2PLMme1
+I+NXwfS9cFh0sL2o7K+/yCFPn2f2HChLpfD+KYHGEerMiXJ
+vYAIE32VAtt0x/eE9XU7i68o1Fv/0PLS8qsWVF8ODh5nlbQ
+1yGr05Ssg4XCGfYE4XcepolIuYGfQlgIs9Nz9uU3IuN6ZBb
+7rLOXSyzR0qJQCruBXmgTUmwLF4G9P43si2PrnzxpzLBFIW
+7dz1Vg0e1dpxv4koMMN+NmFzq8Xj0SN0VwZQr77X6+na4iX
+cKBzlLgK54TQSfhMPvxvjikZSxSuBJTUPEmXoSLjfqdC2nP
+XXdX5V5a36RpybXm6v+TH1s5NAp/PeD2xQNNfZiw97fd3NZ
+vi2TVi3WgM/hgMVzop2d8MuOX4bz6VIURUjW9SnjJLHjYEG
+Ymk/mEwgfHXQzGbow== wazinsky@outlook.com
