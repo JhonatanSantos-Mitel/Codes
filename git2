@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  
+  </head>
+  <body>
+
+  /*Comandos simples para subir um arquivo git
+  *
+  * Criar nova branch: git checkout -b <nome da branch>                                     (toda branch é criada a partir da branch em que se esta dentro)
+  * Baixar arquivos do repositorio remoto: git pull                                         (incorpora mudanças de um repositório remoto para o branch local)
+  * Baixar arquivos do repositorio remoto: git fetch                                        (atualiza as referências locais com relações às remotas, mas não faz o merge com o branch local)
+  * Mostrar todos os brancchs disponiveis: git branch                                       (Mostra todos os repositorios disponiveis para uso)
+  * Mesclar um repositório dentro do outro: git merge <nome da branch>                      (Dentro do repositorio em que vai ser incorporado o merge utilizar o comando)
+  * Ver as alterações feitas antes do merge: git diff <branch origem> <branch destino>      (mostra os arquivos modificados/incluidos/excluidos)
+  * Adicionar tags para melhor organização: git tag 1.0.0 <5 primeiros id carac do commit>  (Utilizando o git log torna-se possivel apontar o commit pela tag)
+  * Abrir interface git: gitk                                                               (Abre interface visual das atualizações feitas)
+  * Listas as conexões remotas disponiveis: git remote -v                                   (Mostra as conexões remotas disponiveis com a URL inclusa)
+  * Enviar atualizações para rep remotos: git push <remote-nome> <branch-nome>              (Carrega o estado local no repositório remoto especificado por nome)
+  </body>
+</html>
