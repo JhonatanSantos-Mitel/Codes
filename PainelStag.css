@@ -1,3 +1,9 @@
+/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
 body {
   background: #F1F3FA;
 }
@@ -25,15 +31,18 @@ body {
 }
 
 .profile-usertitle-name {
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  text-shadow: #7f8385;
   margin-bottom: 7px;
 }
 
 .profile-usertitle-job {
   text-transform: uppercase;
-  color: #e8e8e8;
+  color: #ffffff;
+  text-shadow: #7f8385;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -118,4 +127,10 @@ body {
 .sidebar-nav > .sidebar-brand a:hover {
   color: rgb(0, 0, 0);
   background: none;
+}
+
+/* CONTEUDO */
+.content{
+
+  margin-left: 130px;
 }
