@@ -11,10 +11,10 @@
 
 </head>
 <body>
-<!-- Sidebar com userpic -->
+    <!-- Sidebar com userpic -->
     <div class="container">
         <div class="row profile">
-            <div class="col-xs-4">
+            <div class="col-md-4">
                 <div id="sidebar-wrapper" class="profile-sidebar">
                     <!-- SIDEBAR USERPIC -->
                     <div class="profile-userpic">
@@ -58,6 +58,26 @@
                         </nav>
                     </div>
                 <!-- END MENU -->
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <div class="row content">
+            <div class="col-xs-12">
+                <div class="col-xs-6">
+                    <div class="jumbotron jumbotron-fluid jumb-marg">
+                        <div class="container">
+                            <h1 class="display-2">Inserir conteudo</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="jumbotron jumb-marg">
+                        <div class="container">
+                            <h1 class="display-2">Inserir conteudo</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
