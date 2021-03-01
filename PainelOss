@@ -1,0 +1,71 @@
+<div class="container-fluid">
+            <div class="row content">
+              <div class="col-xs-2 sidenav">
+                <!-- side bar -->
+                <div class="row ">
+                  <div>
+                    <div class="card">
+                        <img class="img-circle d-block w-100" src="logoInf_B.png" alt="Image">
+                        <h3>Wazinsky Dev</h3>
+                        <p class="title">Analista</p>
+                    </div>
+                    <div class="callout">
+                      <div class="callout-header">Callout Header</div>
+                      <div class="callout-container">
+                        <p>Inserir OS's <a href="#">Conteudo Os</a></p>
+                      </div>
+                    </div>
+
+                    <div class="callout">
+                      <div class="callout-header">Callout Header</div>
+                      <div class="callout-container">
+                        <p>Inserir OS's <a href="#">Conteudo Os</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-2 mid-cont">
+                      <img class="d-block w-100" src="logoInf_B.png" alt="Image">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+style;
+
+ /* Side navigation links */
+  .sidenav a {
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+    background-color: rgb(4, 4, 4);
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+	
+	
+	.callout {
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 20px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+  
